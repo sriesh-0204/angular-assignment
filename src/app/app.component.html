@@ -1,0 +1,229 @@
+<section class="main-bg d-flex  align-items-center">
+    <div class="container">
+
+        <div class="main-back-img">
+            <div class="row d-flex justify-content-between align-items-center">
+                <div class="wave">
+                    <img src="../assets/images/wave-1.png" alt="">
+                </div>
+                <div class="col-3">
+                    <div class="bg-img">
+                        <img src="../assets/images/bg-1.png" alt="">
+                    </div>
+                </div>
+                <div class="col-4 position-relative">
+                    <div class="animation-text ">
+                        <div class="move-me move-me-1 position-absolute">
+                            <h3>
+                                Hai
+                            </h3>
+                        </div>
+                        <br>
+                        <div class="move-me move-me-2 position-absolute">
+                            <h6>
+                                hello
+                            </h6>
+                        </div>
+                        <br>
+                        <div class="move-me move-me-3 position-absolute">
+                            <h5>
+                                Text
+                            </h5>
+                        </div>
+                        <div class="move-me move-me-4 position-absolute">
+                            <small>
+                                survive
+                            </small>
+                        </div>
+                        <br>
+                        <div class="move-me move-me-5 position-absolute">
+                            <strong>
+                                Loreum
+                            </strong>
+                        </div>
+                        <br>
+                        <div class="move-me move-me-6 position-absolute">
+                            <h5>
+                                Tamil
+                            </h5>
+                        </div>
+                        <div class="pos-a">
+                            <div class="move-me move-me-7 position-absolute">
+                                <small>
+                                    survive
+                                </small>
+                            </div>
+                            <br>
+                            <div class="move-me move-me-9 position-absolute">
+                                <h2>
+                                    विकिपीडिया
+                                </h2>
+                            </div>
+                            <br>
+                            <div class="move-me move-me-10 position-absolute">
+                                <h3>
+                                    Telugu
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="pos-b">
+                            <div class="move-me move-me-11 position-absolute">
+                                <small>
+                                    ipsum
+                                </small>
+                            </div>
+                            <br>
+                            <div class="move-me move-me-12 position-absolute">
+                                <h2>
+                                    malayalam
+                                </h2>
+                            </div>
+                            <br>
+                            <div class="move-me move-me-13 position-absolute">
+                                <h3>
+                                    Radios
+                                </h3>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card-body card-body-form">
+                        <div class="form-sign mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="w-25">
+                                    <img src="../assets/images/thumb-up.svg" alt="">
+                                </div>
+                                <div class="w-75">
+                                    <h6>
+                                        To Start Your Free sales Trial
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+                            <div class="form-row">
+
+                                <div class="form-group col-6">
+                                    <label>First Name</label>
+                                    <input type="text" formControlName="firstName" class="form-control" placeholder="Enter First Name" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.firstName.errors.required">First Name is required</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Last Name</label>
+                                    <input type="text" formControlName="lastName" placeholder="Enter Last Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                                    <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.lastName.errors.required">Last Name is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label>Email</label>
+                                    <input type="text" formControlName="email" placeholder="Enter Email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Email is required</div>
+                                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Saluation</label>
+                                    <select formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+                          <option value="">Select Saluation</option>
+                          <option value="Mr">Mr</option>
+                          <option value="Mrs">Mrs</option>
+                          <option value="Miss">Miss</option>
+                          <option value="Ms">Ms</option>
+                      </select>
+                                    <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                                        <div *ngIf="f.title.errors.required">Saluation is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label>Company Name</label>
+                                    <input type="text" formControlName="Companyname" placeholder="Enter Company Name" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+                                    <div *ngIf="submitted && f.Companyname.errors" class="invalid-feedback">
+                                        <div *ngIf="f.Companyname.errors.required"> CompanyName is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label>No of Employee</label>
+                                    <select formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+                      <option value="">Enter Employee</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                  </select>
+                                    <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                                        <div *ngIf="f.title.errors.required">Employee is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6 birthdate">
+                                    <label>BirthDate</label>
+                                    <kendo-datepicker class="birth" [format]="'yyyy/MM/dd'">
+                                    </kendo-datepicker>
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Email is required</div>
+                                        <div *ngIf="f.email.errors.email">Email must be a valid email address</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>CRM Vendores</label>
+                                    <input type="text" formControlName="firstName" placeholder="Enter CRM Vendors" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+                                    <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                                        <div *ngIf="f.firstName.errors.required">CRM Vendors is required</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-6">
+                                    <label>Phone Number</label>
+                                    <input type="text" placeholder="Enter Phone Number" formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+                                    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+                                        <div *ngIf="f.email.errors.required">Phone Number is required</div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group col-6">
+                                    <label>Country</label>
+                                    <select formControlName="title" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.title.errors }">
+                        <option value="">Select Country</option>
+                        <option value="uae">UAE</option>
+                        <option value="india">india</option>
+                        <option value="usa">usa</option>
+                        <option value="uae">uae</option>
+                    </select>
+                                    <div *ngIf="submitted && f.title.errors" class="invalid-feedback">
+                                        <div *ngIf="f.title.errors.required">Country is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group form-check">
+                                <input type="checkbox" formControlName="acceptTerms" id="acceptTerms" class="form-check-input" [ngClass]="{ 'is-invalid': submitted && f.acceptTerms.errors }" />
+                                <label for="acceptTerms" class="form-check-label">Accept Terms & Conditions</label>
+                                <div *ngIf="submitted && f.acceptTerms.errors" class="invalid-feedback">Accept Ts & Cs is required</div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn w-100 btn-primary submit-btn mr-1">Start My Free Trial</button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

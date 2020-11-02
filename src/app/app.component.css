@@ -1,0 +1,232 @@
+.main-bg {
+    background: linear-gradient(111deg, rgba(24, 0, 85, 0.8) 28%, rgba(55, 66, 173, 1) 85%);
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-body.card-body-form {
+    background: #16004b;
+    height: auto;
+    border-radius: 8px;
+    -webkit-box-shadow: 1px 1px 4px 9px rgba(42, 31, 130, 1);
+    -moz-box-shadow: 1px 1px 4px 9px rgba(42, 31, 130, 1);
+    box-shadow: 1px 1px 4px 9px rgba(22, 0, 75, 0.44);
+}
+
+.card-body-form label {
+    color: #ffffffa1;
+    font-size: 12px;
+}
+
+.k-datepicker .k-picker-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+    border: 1px solid #ced4da;
+}
+
+.k-datepicker .k-picker-wrap,
+.k-timepicker .k-picker-wrap,
+.k-datetimepicker .k-picker-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+}
+
+.form-control {
+    padding: 2px 10px;
+    background-color: unset;
+    height: 30px !important;
+}
+
+.submit-btn {
+    background: #df643a;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.move-me {
+    display: inline-block;
+    color: #ffffff7a;
+    position: relative;
+    z-index: 3;
+}
+
+.move-me-1 {
+    animation: move-in-steps 5s infinite;
+    z-index: 1;
+}
+
+.move-me-2 {
+    animation: move-in-steps 2s infinite;
+    z-index: 2;
+}
+
+.move-me-3 {
+    animation: move-in-steps 8s infinite;
+}
+
+.move-me-4 {
+    animation: move-in-steps 11s infinite;
+    z-index: 4;
+}
+
+.move-me-5 {
+    animation: move-in-steps 20s infinite;
+    z-index: 6;
+}
+
+.move-me-6 {
+    animation: move-in-steps 3s infinite;
+    z-index: 9;
+}
+
+.move-me-7 {
+    animation: move-in-steps 11s infinite;
+    z-index: auto;
+}
+
+.move-me-9 {
+    animation: move-in-steps 4s infinite;
+    z-index: 1;
+}
+
+.move-me-10 {
+    animation: move-in-steps 2s infinite;
+    z-index: 5;
+}
+
+.move-me-11 {
+    animation: move-in-steps 6s infinite;
+    z-index: auto;
+}
+
+.wave img {
+    width: 78%;
+    height: 100px;
+}
+
+.wave {
+    position: absolute;
+    left: 21em;
+    top: 15em;
+}
+
+.move-me-12 {
+    animation: move-in-steps 15s infinite;
+    z-index: 1;
+}
+
+.move-me-13 {
+    animation: move-in-steps 22s infinite;
+    z-index: 5;
+}
+
+.bg-img img {
+    position: absolute;
+    top: -14em;
+    left: 4em;
+}
+
+.animation-text {
+    overflow: hidden;
+    position: relative;
+}
+
+.move-me-2 {
+    color: orange;
+}
+
+.form-sign img {
+    width: 50px;
+    height: 50px;
+}
+
+.form-sign h6 {
+    color: #ffffffc4;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.pos-a {
+    position: relative;
+    left: 0;
+    top: -73px;
+}
+
+.pos-b {
+    position: relative;
+    left: 0;
+    top: -168px;
+}
+
+.birthdate .k-dateinput {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+}
+
+.birthdate .k-input {
+    background-color: #16004b !important;
+    background: red !important;
+}
+
+.birthdate .k-dateinput-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+}
+
+.k-calendar tr th[scope="col"]::after {
+    content: '2000';
+    background: #fff;
+    color: white;
+    height: 20px;
+    width: 30px;
+    display: inline-block;
+    position: relative;
+    right: 31px;
+}
+
+.k-datepicker .k-picker-wrap,
+.k-timepicker .k-picker-wrap,
+.k-datetimepicker .k-picker-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset!important;
+}
+
+:host ::ng-deep .k-state-selected {
+    background-color: green !important;
+}
+
+.birthdate .k-datepicker {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+}
+
+select.form-control.ng-pristine.ng-invalid.ng-touched {
+    color: #4a486a;
+}
+
+.k-calendar .k-state-selected {
+    background: blue;
+}
+
+.birthdate .k-picker-wrap {
+    border-color: rgba(0, 0, 0, 0.08);
+    color: #656565;
+    background-color: unset !important;
+}
+
+@keyframes move-in-steps {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
